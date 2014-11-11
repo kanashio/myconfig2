@@ -1,0 +1,55 @@
+<openbox_menu>
+  <menu id="term" label="Terminal">
+    <item label="Terminator">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>yes</enabled>
+	  <name>Terminator</name>
+	</startupnotify>
+	<command>
+	  terminator
+	</command>
+      </action>
+    </item>
+  </menu>
+  <menu id="browse" label="Browser">
+    <item label="Chrome">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>yes</enabled>
+	  <name>Google Chrome</name>
+	</startupnotify>
+	<command>
+	  google-chrome-stable
+	</command>
+      </action>
+    </item>
+  </menu>
+  <menu id="edit" label="Editor">
+    <item label="Emacs">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>yes</enabled>
+	  <name>Emacs</name>
+	</startupnotify>
+	<command>
+	  emacs
+	</command>
+      </action>
+    </item>
+  </menu>
+  <menu id="root-menu" label="Openbox 3">
+    <separator label="Applications" />
+    <menu id="term"/>
+    <menu id="browse"/>
+    <menu id="edit"/>
+    <separator label="System" />
+    <menu id="system-menu"/>
+    <separator />
+    <item label="Log Out">
+      <action name="Exit">
+	<prompt>no</prompt>
+      </action>
+    </item>
+  </menu>
+</openbox_menu>
