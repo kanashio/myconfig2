@@ -2,4 +2,4 @@ xmodmap ~/.xmodmap &
 pulseaudio --start &
 ~/backlight.sh &
 ~/.fehbg &
-pypanel
+bmpanel2

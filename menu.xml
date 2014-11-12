@@ -1,63 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openbox_menu>
-  <menu id="term" label="Terminal">
-    <item label="Terminator">
-      <action name="Execute">
-	<startupnotify>
-	  <enabled>yes</enabled>
-	  <name>Terminator</name>
-	</startupnotify>
-	<command>
+	<menu id="chat" label="Chat">
+		<item label="Skype">
+			<action name="Execute">
+				<execute>skype</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="term" label="Terminal">
+		<item label="Terminator">
+			<action name="Execute">
+				<startupnotify>
+					<enabled>yes</enabled>
+					<name>Terminator</name>
+				</startupnotify>
+				<command>
 	  terminator
 	</command>
-      </action>
-    </item>
-  </menu>
-  <menu id="browse" label="Browser">
-    <item label="Chrome">
-      <action name="Execute">
-	<startupnotify>
-	  <enabled>yes</enabled>
-	  <name>Google Chrome</name>
-	</startupnotify>
-	<command>
+			</action>
+		</item>
+	</menu>
+	<menu id="browse" label="Browser">
+		<item label="Chrome">
+			<action name="Execute">
+				<startupnotify>
+					<enabled>yes</enabled>
+					<name>Google Chrome</name>
+				</startupnotify>
+				<command>
 	  google-chrome-stable
 	</command>
-      </action>
-    </item>
-  </menu>
-  <menu id="edit" label="Editor">
-    <item label="Emacs">
-      <action name="Execute">
-	<startupnotify>
-	  <enabled>yes</enabled>
-	  <name>Emacs</name>
-	</startupnotify>
-	<command>
+			</action>
+		</item>
+	</menu>
+	<menu id="ide" label="IDE">
+		<item label="CLion">
+			<action name="Execute">
+				<execute>clion</execute>
+			</action>
+		</item>
+		<item label="IntelliJ IDEA">
+			<action name="Execute">
+				<execute>idea</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="games" label="Games">
+		<item label="Wurm(1)">
+			<action name="Execute">
+				<execute>wurm</execute>
+			</action>
+		</item>
+		<item label="Wurm(2)">
+			<action name="Execute">
+				<execute>wurm 2</execute>
+			</action>
+		</item>
+		<item label="Wurm(4)">
+			<action name="Execute">
+				<execute>wurm 4</execute>
+			</action>
+		</item>
+		<item label="Firestorm">
+			<action name="Execute">
+				<execute>firestorm</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="edit" label="Editor">
+		<item label="Emacs">
+			<action name="Execute">
+				<startupnotify>
+					<enabled>yes</enabled>
+					<name>Emacs</name>
+				</startupnotify>
+				<command>
 	  emacs
 	</command>
-      </action>
-    </item>
-  </menu>
-  <menu label="Settings" id="settings">
-    <item label="Openbox Configuration Manager">
-      <action name="Execute">
-	<command>obconf</command>
-	<startupnotify><enabled>yes</enabled></startupnotify>
-      </action>
-    </item>
-  </menu>
-  <menu id="root-menu" label="Openbox 3">
-    <separator label="Applications" />
-    <menu id="term"/>
-    <menu id="browse"/>
-    <menu id="edit"/>
-    <separator label="System" />
-    <menu id="settings"/>
-    <separator />
-    <item label="Log Out">
-      <action name="Exit">
-	<prompt>no</prompt>
-      </action>
-    </item>
-  </menu>
+			</action>
+		</item>
+	</menu>
+	<menu id="settings" label="Settings">
+		<item label="BMPanel2 Settings">
+			<action name="Execute">
+				<execute>bmpanel2cfg</execute>
+			</action>
+		</item>
+		<item label="Openbox Menu Configurator">
+			<action name="Execute">
+				<execute>obmenu</execute>
+			</action>
+		</item>
+		<item label="Openbox Configuration Manager">
+			<action name="Execute">
+				<command>obconf</command>
+				<startupnotify>
+					<enabled>yes</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Openbox Key Configurator">
+			<action name="Execute">
+				<execute>obkey</execute>
+			</action>
+		</item>
+		<item label="Reset Openbox">
+			<action name="Restart"/>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Applications"/>
+		<menu id="term"/>
+		<menu id="browse"/>
+		<menu id="ide"/>
+		<menu id="games"/>
+		<menu id="chat"/>
+		<menu id="edit"/>
+		<separator label="System"/>
+		<menu id="settings"/>
+		<separator/>
+		<item label="Reboot">
+			<action name="Execute">
+				<execute>sudo reboot</execute>
+			</action>
+		</item>
+		<item label="Shutdown">
+			<action name="Execute">
+				<execute>sudo shutdown -h now</execute>
+			</action>
+		</item>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>no</prompt>
+			</action>
+		</item>
+	</menu>
 </openbox_menu>
