@@ -2,4 +2,4 @@ xmodmap ~/.xmodmap &
 pulseaudio --start &
 ~/backlight.sh &
 ~/.fehbg &
-bmpanel
+bmpanel2

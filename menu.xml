@@ -48,7 +48,7 @@
 	<menu id="games" label="Games">
 		<item label="Wurm(1)">
 			<action name="Execute">
-				<execute>wurm</execute>
+				<execute>wurm 1</execute>
 			</action>
 		</item>
 		<item label="Wurm(2)">
