@@ -3,4 +3,6 @@ pulseaudio --start &
 ~/backlight.sh &
 ~/.fehbg &
 bmpanel2 &
-conky -c ./conkyrc
+conky -c ~/.config/openbox/conkyrc &
+yakuake &
+udiskie

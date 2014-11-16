@@ -8,6 +8,11 @@
 		</item>
 	</menu>
 	<menu id="term" label="Terminal">
+		<item label="Sakura">
+			<action name="Execute">
+				<execute>sakura</execute>
+			</action>
+		</item>
 		<item label="Terminator">
 			<action name="Execute">
 				<startupnotify>
@@ -34,6 +39,11 @@
 		</item>
 	</menu>
 	<menu id="ide" label="IDE">
+		<item label="PyCharm">
+			<action name="Execute">
+				<execute>pycharm</execute>
+			</action>
+		</item>
 		<item label="CLion">
 			<action name="Execute">
 				<execute>clion</execute>

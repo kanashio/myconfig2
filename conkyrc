@@ -28,9 +28,9 @@ own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
 
 # Minimum size of text area
-minimum_size 180 0
+minimum_size 300
 #maximum_width 200
-
+minimum_height 300
 # Draw shades?
 draw_shades no
 
@@ -38,10 +38,10 @@ draw_shades no
 draw_outline no
 
 # Draw borders around text
-draw_borders no
+draw_borders yes
 
 # Stippled borders?
-stippled_borders 0
+stippled_borders 1
 
 # border margins
 border_margin 5
@@ -56,8 +56,8 @@ default_color white
 own_window_colour grey
 
 # Text alignment, other possible values are commented
-#alignment top_left
-alignment top_right
+alignment top_left
+#alignment top_right
 #alignment bottom_left
 #alignment bottom_right
 
@@ -110,7 +110,10 @@ ${alignc 19}${font Arial Black:size=18}${time %H:%M}${font}
 ${voffset 2}${alignc}${time %A, %d %B %Y}
 
 
-${voffset -10}HD ${hr 2}
+${voffset -10}HD /  ${hr 2}
 ${voffset 4}${font Pie charts for maps:size=14}7${font} ${voffset -5}Root:
 ${voffset 4}${fs_used /}/${fs_size /} ${alignr}${fs_bar 8,60 /}
 
+${voffset -10}HD /home  ${hr 2}
+${voffset 4}${font Pie charts for maps:size=14}7${font} ${voffset -5}Home:
+${voffset 4}${fs_used /home}/${fs_size /home} ${alignr}${fs_bar 8,65 /home}

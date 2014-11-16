@@ -2,4 +2,7 @@ xmodmap ~/.xmodmap &
 pulseaudio --start &
 ~/backlight.sh &
 ~/.fehbg &
-bmpanel2
+bmpanel2 &
+conky -c ./conkyrc &
+yakuake &
+udiskie
